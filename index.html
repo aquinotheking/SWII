@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="js/modernizer.js"></script>
+	<link rel="shortcut icon" href="img/ayc.ico">
+  	
+	<title>AYCSOFT</title>
+</head>
+<body>
+	<header role="banner">
+		<div id="cd-logo"><a href="#0"><img src="img/aycs.png" alt="Logo" width="120px" height="90px" style="margin-top: -80px; float:left;"></a></div>
+		<center>
+		<h1 style="text-align: center; color:black; font-size: 60px; text-decoration: bold; margin-top: -55px; margin-left: -180px;">F.E.L.C.C.
+		</h1>
+		</center>
+		<nav class="main-nav" style="margin-top: -55px;">
+			<ul>
+				<!-- inser more links here -->
+				<li><a class="cd-signin" href="#0" style="margin-top: -80px;">Ingresar al Sistema</a></li>
+				<li><a class="cd-signup" href="http://aycsoftw.comule.com/" target="_blank">Visitar Pagina Web</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+		<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+			<ul class="cd-switcher">
+				<li><a href="#0" style="width:600px; font-size: 35px; background:black; color:white;">FELCC</a></li>
+			</ul>
+
+			<div id="cd-login"> <!-- log in form -->
+				<form class="cd-form" action="Controlador/C_Login.php" method="POST" id="Login-Form" autocomplete="off">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signin-email">CI</label>
+						<input class="full-width has-padding has-border" id="CI" type="text" placeholder="CI" name="CI">
+						<span class="cd-error-message">Usuario Incorrecto Verifica Tus Datos!!!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signin-password">Contraseña</label>
+						<input class="full-width has-padding has-border" id="PW" type="password"  placeholder="Contraseña" name="PW">
+						<span class="cd-error-message">Contraseña Incorrecta Verifique sus datos!!!</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width" type="submit" name="Ingresar" value="Ingresar">
+					</p>
+				</form>
+				
+				<p class="cd-form-bottom-message"><a href="#0">Olvidaste tu contraseña?</a></p>
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-login -->
+
+			<div id="cd-reset-password"> <!-- reset password form -->
+				<p class="cd-form-message">Ingresa tu CI se te enviara tu contraseña al correo con el que fuiste registrado</p>
+
+				<form class="cd-form" action="Controlador/C_Login.php" method="POST">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="reset-email">Correo</label>
+						<input class="full-width has-padding has-border" id="reset-email" type="text" name="Correo" placeholder="CI">
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" name="Recuperar" value="Recuperar">
+					</p>
+				</form>
+			</div> <!-- cd-reset-password -->
+			<a href="#0" class="cd-close-form">Close</a>
+		</div> <!-- cd-user-modal-container -->
+	</div> <!-- cd-user-modal -->
+
+	<div class="cd-slider-wrapper">
+		<ul class="cd-slider" data-step1="M1402,800h-2V0h1c0.6,0,1,0.4,1,1V800z" data-step2="M1400,800H379L771.2,0H1399c0.6,0,1,0.4,1,1V800z" data-step3="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z" data-step4="M-2,800h2V0h-1c-0.6,0-1,0.4-1,1V800z" data-step5="M0,800h1021L628.8,0L1,0C0.4,0,0,0.4,0,1L0,800z" data-step6="M0,800h1400V0L1,0C0.4,0,0,0.4,0,1L0,800z">
+			<li class="visible">
+				<div class="cd-svg-wrapper">
+					<svg viewBox="0 0 1400 800">
+						<defs>
+							<clipPath id="cd-image-1">
+								<path id="cd-changing-path-1" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"/>
+							</clipPath>
+						</defs>
+						
+						<image height='700px' width="1400px" clip-path="url(#cd-image-1)" xlink:href="img/sombrero.jpg" ></image>
+					</svg>
+				</div> <!-- .cd-svg-wrapper -->
+			</li>
+
+			<li>
+				<div class="cd-svg-wrapper">
+					<svg viewBox="0 0 1400 800">
+						<title>Aimated SVG</title>
+						<defs>
+							<clipPath id="cd-image-2">
+								<path id="cd-changing-path-2" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"/>
+							</clipPath>
+						</defs>
+						
+						<image height='700px' width="1400px" clip-path="url(#cd-image-2)" xlink:href="img/escudo2.jpg"></image>
+					</svg>
+				</div> <!-- .cd-svg-wrapper -->
+			</li>
+
+			<li>
+				<div class="cd-svg-wrapper">
+					<svg viewBox="0 0 1400 800">
+						<title>Aimated SVG</title>
+						<defs>
+							<clipPath id="cd-image-3">
+								<path id="cd-changing-path-3" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"/>
+							</clipPath>
+						</defs>
+						
+						<image height='700px' width="1400px" clip-path="url(#cd-image-3)" xlink:href="img/escudo.png"></image>
+					</svg>
+				</div> <!-- .cd-svg-wrapper -->
+			</li>
+
+			<li>
+				<div class="cd-svg-wrapper">
+					<svg viewBox="0 0 1400 800">
+						<title>Aimated SVG</title>
+						<defs>
+							<clipPath id="cd-image-4">
+								<path id="cd-changing-path-4" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"/>
+							</clipPath>
+						</defs>
+						
+						<image height='700px' width="1400px" clip-path="url(#cd-image-4)" xlink:href="img/emblema.jpg"></image>
+					</svg>
+				</div> <!-- .cd-svg-wrapper -->
+			</li>
+			
+		</ul> <!-- .cd-slider -->
+
+		<ul class="cd-slider-navigation">
+			<li><a href="#0" class="next-slide">Next</a></li>
+			<li><a href="#0" class="prev-slide">Prev</a></li>
+		</ul> <!-- .cd-slider-navigation -->
+
+		<ol class="cd-slider-controls">
+			<li class="selected"><a href="#0"><em>Item 1</em></a></li>
+			<li><a href="#0"><em>Item 2</em></a></li>
+			<li><a href="#0"><em>Item 3</em></a></li>
+			<li><a href="#0"><em>Item 4</em></a></li>
+		</ol> <!-- .cd-slider-controls -->
+	</div> <!-- .cd-slider-wrapper -->
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/snap.svg-min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script> <!-- Gem jQuery -->
+</body>
+</html>
